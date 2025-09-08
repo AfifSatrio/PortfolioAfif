@@ -18,7 +18,7 @@ const BodyContact = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                     <label className="font-semibold">Message</label>
-                    <textarea name="" id="" cols="45" rows="7" placeholder="Your Message..." className="border border-zinc-500 p-2 rounded-md" required></textarea>
+                    <textarea name="message" id="message" cols="45" rows="7" placeholder="Your Message..." className="border border-zinc-500 p-2 rounded-md" required></textarea>
                 </div>
                 <div className="text-center">
                     <button type="submit" className="bg-amber-500 hover:bg-orange-300 p-3 rounded-lg w-full">Sent Message</button>
