@@ -68,13 +68,18 @@ const BodyAbout = () => {
     },
   ]
 
+  const openLink = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     // ABOUT SECTION
     <div className="hero mt-32 py-10 xl:px-30 px-10 scroll-mt-20" id="about">
       <div className="grid xl:grid-cols-2 grid-cols-1 gap-4 mb-6" data-aos="fade-up" data-aos-duration="1000">
         <div>
           <h1 className="md:text-5xl/tight text-3xl/tight font-bold mb-6 text-center xl:text-left">Get To Know About Me</h1>
-          <p className="text-base/loose text-justify mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum amet repellat cupiditate iure voluptatum in iste ut veritatis atque magnam accusamus labore exercitationem suscipit, alias quae ipsa optio doloribus ex. Eius blanditiis at quas, nesciunt perferendis consequatur ipsam reprehenderit vero inventore, quidem ea asperiores eveniet quibusdam facilis labore iure?</p>
+          <p className="text-base/loose text-justify mb-6">Hello everyone, my name is Muhammad Afif Satrio Wicaksono. I am a Frontend Engineer focusing on Website and Mobile App. I am a student of the Information Technology study at Brawijaya University. Feel free to connect at <u className="text-amber-500" onClick={() => openLink("https://www.linkedin.com/in/afifsatrio/")}>LinkedIn</u> and <u className="text-amber-500" onClick={() => openLink("https://www.instagram.com/afifsatrio_?igsh=MXdudTcwM3NlMTE3bA==")}>Instagram</u> where I post my daily life and also some of my projects ranging from UI/UX projects to Mobile App projects. I am very open to opportunities to work together where I can upgrade my skills and grow. If you are interested in collaborating with me, contact me at <a href="#contact"><b>Contact.</b></a>
+          </p>
           <div className="mt-10 text-center xl:text-left mb-6">
             <a href="/CV Afif Satrio.pdf" download="CV Afif Satrio" className="bg-zinc-600 hover:bg-amber-500 px-6 py-4 rounded-2xl duration-500">Download CV</a>
           </div>
